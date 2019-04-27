@@ -1,5 +1,5 @@
 # nextTick
-Vue提供的nextTick(fn)方法能够保证fn在当前上下文执行完成且DOM已经更新后调用，其中的原理主要是依据HTML规范中的[EventLoop](https://github.com/stoneqq11/HTML-notes/blob/master/event%20loop.md)。
+Vue提供的nextTick(fn)方法能够保证fn在当前上下文执行完成且DOM已经更新后调用，其中的原理主要是依据HTML规范中的[EventLoop](../html/event_loop.md)。
 
 <br/>
 
