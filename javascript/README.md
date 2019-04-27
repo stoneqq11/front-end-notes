@@ -1,7 +1,7 @@
 # Javascript
 
 ## 基础
-1. [变量](https://github.com/stoneqq11/think-in-js/blob/master/%E5%8F%98%E9%87%8F.md)
+1. [变量](./variable.md)
 2. [函数](https://github.com/stoneqq11/think-in-js/blob/master/%E5%87%BD%E6%95%B0.md)
 3. [对象](https://github.com/stoneqq11/think-in-js/blob/master/%E5%AF%B9%E8%B1%A1.md)
 <br/>
