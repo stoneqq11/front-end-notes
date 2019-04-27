@@ -1,14 +1,14 @@
 # HTML
 
-[语义化](https://github.com/stoneqq11/HTML-notes/blob/master/semantic.md)
+[语义化](./semantic.md)
 
-[交互](https://github.com/stoneqq11/HTML-notes/blob/master/interaction.md)
+[交互](./interaction.md)
 
-[window]()
+[window](./window.md)
 
-[event loop](https://github.com/stoneqq11/HTML-notes/blob/master/event%20loop.md)
+[event loop](./event_loop.md)
 
-[document]()
+[document](./document.md)
 
-[elements](https://github.com/stoneqq11/HTML-notes/blob/master/elements.md)
+[elements](./elements.md)
 
