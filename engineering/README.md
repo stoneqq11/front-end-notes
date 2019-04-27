@@ -1,20 +1,15 @@
 # 前端工程
 
-## 代码规范
-js [eslint](https://github.com/stoneqq11/front-end-engineering/blob/master/eslint.js)
-
-css
-
-## 结构规范
+## 代码质量
+1. js代码规范 [eslint](./js/eslint.js)
+2. 单元测试 [mocha](./mocha.md)
 
 ## 模块化
-[module]()
+[module](./module.md)
 
 ## 组件化
 
-## 自动化
-构建工具[webpack](https://github.com/stoneqq11/front-end-engineering/blob/master/webpack.md)
+## 自动化构建
+构建工具[webpack](./webpack.md)
 
-转码工具[bable](https://github.com/stoneqq11/front-end-engineering/blob/master/babel.md)
-
-测试工具[mocha](https://github.com/stoneqq11/front-end-engineering/blob/master/mocha.md)
+转码工具[bable](./babel.md)
