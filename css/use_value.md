@@ -1,0 +1,33 @@
+# 样式取值
+浏览器在解析构建document tree后，必须为树种的每一个元素的每一个样式属性指定值，这个过程分为四步：
+1. 使用指定的值(Specified value)
+2. 然后，得到一个计算值(Computed value)，该值用于继承
+3. 接下来，部分属性需要转换，例如百分比宽，转换后的值叫使用值(Used value)
+4. 最后，根据本地环境的规则，转换为实际值(Actual value)
+
+<br/>
+
+## Specified value
+指定值根据如下规则获取：
+1. 根据[级联](https://github.com/stoneqq11/css-summary/blob/master/%E7%BA%A7%E8%81%94.md)规则处理的结果，如果不是'inherit'，则使用该值;
+2. 如果级联处理结果为'inherit'，则取依照[继承]()规则，取父元素的计算值
+3. 否则，使用定义属性时候设定的初始值
+
+<br/>
+
+## Computed value
+计算值在级联处理过程中生成，例如：使用 em|ex 等单位需要被转换为 px 值，url被转换为绝对路径等。
+
+继承处理是使用该值
+
+<br/>
+
+## Used value
+计算值在级联处理过程中就已经确定，但有些值需要依赖其他的值；例如使用了百分比宽度的值，需要根据其[包含块](https://github.com/stoneqq11/css-summary/blob/master/%E5%8C%85%E5%90%AB%E5%9D%97.md)尺寸计算。
+
+渲染值是使用该值
+
+<br/>
+
+## Actual value
+使用值被用来渲染，但可能会受到用户代理的额外处理，最终样式渲染的值可能不等于使用值
