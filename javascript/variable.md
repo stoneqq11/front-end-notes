@@ -1,6 +1,6 @@
 ## 定义
 
-```
+```js
 // 定义变量 a
 // 重复定义不报错
 var a
@@ -20,7 +20,7 @@ const d
 ## 赋值
 
 基础类型值拷贝
-```
+```js
 var a = 0
 var b = a
 
@@ -29,7 +29,7 @@ console.log(b)
 ```
 
 引用类型拷贝引用
-```
+```js
 var a = {name: 's'}
 var b = a
 
@@ -40,7 +40,7 @@ console.log(b.name)
 ```
 
 函数传参
-```
+```js
 var a = 1
 var b = {a: 1}
 var fn = function(a, b) {
@@ -65,7 +65,7 @@ console.log(b.a)
 
 ## 变量提升（var hosting）
 
-```
+```js
 // undefined
 console.log(a)
 
@@ -76,7 +76,7 @@ console.log(a)
 ```
 变量声明总是在代码执行之前处理，上述代码等价于
 
-```
+```js
 var a
 console.log(a)
 a = 100
@@ -87,7 +87,7 @@ console.log(a)
 ## 作用域
 
 变量作用域是指在执行代码时变量的可访问范围，分为全局作用域、局部作用域；其中局部作用域包括函数作用域和块级作用域（ES6支持）
-```
+```js
 // 全局变量对应全局作用域
 var g = 'global'
 
@@ -100,7 +100,7 @@ function f() {
 }
 ```
 
-```
+```js
 for (let i = 0; i < 10; i++) {
     // es6 块级作用域，i在for内部访问
     console.log(i)

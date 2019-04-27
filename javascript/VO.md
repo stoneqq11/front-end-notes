@@ -1,7 +1,7 @@
 
 # 变量对象（variable object）
 VO 是存储当前代码数据信息的对象，包含 **变量声明**、**函数声明(不包含函数表达式)**、**函数形参定义** 三部分
-```
+```js
 VO = {
     variables,
     functions,
@@ -9,7 +9,7 @@ VO = {
 }
 ```
 
-```
+```js
 var n = 0
 function f(a) {
     var b = 1
@@ -33,7 +33,7 @@ AO(function f) {
 
 ## 活动对象（activation object）
 当进入函数执行上下文后，VO不能直接访问，会创建一个AO对象，替代VO的作用
-```
+```js
 VO(globalContext) === global
 VO(functionContext) === AO
 ```

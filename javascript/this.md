@@ -3,7 +3,7 @@ this 是代码执行时赋值，代表当前执行环境；this取值取决于�
 <br/>
 
 ## 全局this
-```
+```js
 var n = 1
 
 // output: 1, 等同 window.n
@@ -19,7 +19,7 @@ console.log(n)
 <br/>
 
 ## 作为方法调用的this
-```
+```js
 var a = 'global'
 var obj = {
 	a: 'inner',
@@ -39,7 +39,7 @@ f1()
 
 > 作为方法调用中的this，等同于最后一个 **.** 操作符前的对象值；上述 obj.f() 内的this就是obj；f1() 等同于 window.f1()，内部this就是window
 
-```
+```js
 var obj = {
 	f: f
 }
@@ -61,7 +61,7 @@ function f() {
 <br/>
 
 ## 构造函数中this
-```
+```js
 function Group() {
 	this.children = []
 }
@@ -76,7 +76,7 @@ console.log(g.children)
 ## 箭头函数（ES6）
 箭头函数中this绑定了其外层调用函数的this
 
-```
+```js
 const obj = {
 	f: () => {
 		console.log(this)
@@ -90,7 +90,7 @@ f()
 // output: window
 obj.f()
 ```
-```
+```js
 const obj1 = {
 	f() {
 		return () => console.log(this)
@@ -110,7 +110,7 @@ fn1()()
 <br/>
 
 ## 改变this值
-```
+```js
 function f() {
 	console.log(this.a)
 }

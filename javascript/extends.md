@@ -3,7 +3,7 @@
 继承是指让子对象拥有父对象的属性和方法，JavaScript中，可以通过多种方式实现继承
 
 ## 构造函数继承
-```
+```js
 function Parent() {
     this.a = 1
     this.b = function() {}
@@ -22,7 +22,7 @@ console.log(new Child().a)
 以上继承方法简单直观，但也有很多缺点：第一，只能继承构造函数本身的属性或方法，构造函数原型的属性不能被继承；第二，所有的属性都生成在实例化对象上，造成空间浪费
 
 ## 原型继承
-```
+```js
 function Parent() {
     this.a = 1
 }
@@ -52,7 +52,7 @@ console.log(new Child().f())
 实现继承的方式有很多种，但追溯根源，都是通过原型或构造器实现；
 <br/>
 下面分析ES6 extends 在babel编译后的代码：
-```
+```js
 function _inherits(subClass, superClass) {
     if (typeof superClass !== "function" && superClass !== null) {
         throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
@@ -74,7 +74,7 @@ function _inherits(subClass, superClass) {
 ```
 
 上面看到，子类通过原型继承的方式，继承了父类原型上的属性；而构造函数里的属性则是通过super调用实现
-```
+```js
 class A {
     constructor() {
         this.a = 1
@@ -90,7 +90,7 @@ class B extends A {
 }
 ```
 看super转码后的实现：
-```
+```js
 // B.__proto__实际在_inherits执行时已经被设置为A
 // 所以相当于执行A.call(this)，也就是构造器继承
 var _this = _possibleConstructorReturn(this, (B.__proto__ || Object.getPrototypeOf(B)).call(this));

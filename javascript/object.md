@@ -5,7 +5,7 @@
 ## 数据类型
 JavaScript提供 **值类型** 和 **引用类型**
 
-```
+```js
 // 值类型包括：string/boolean/number/null/undefined/symbol
 const s = 'string'
 const n = 1
@@ -24,7 +24,7 @@ const o = {s, n, b}
 ## 初始化
 JavaScript中，对象的初始化包括两种方式：**字面量（literals）** 和 **构造函数（constructor）**
 
-```
+```js
 // 对象内部可以包括任意的数据类型，通过 . 操作符范围内部属性
 
 // 使用 {} 进行对象初始化
@@ -61,7 +61,7 @@ const obj4 = new Object()
 <br/>
 
 ## literals vs constructor
-```
+```js
 // 对于Object，两种方式是等价的
 var obj1 = {}
 var obj2 = new Object()
@@ -85,7 +85,7 @@ console.log(typeof n2)
 <br/>
 
 ## Object基类中定义的方法
-```
+```js
 // 返回一个布尔值 ，表示某个对象是否含有指定的属性，而且此属性非原型链继承的
 Object.prototype.hasOwnProperty()
 
@@ -105,7 +105,7 @@ Object.prototype.valueOf()
 <br/>
 
 ## 其他
-```
+```js
 // 复制后面所有参数属性到第一个参数上，浅拷贝
 Object.assign({}, {}, ...)
 

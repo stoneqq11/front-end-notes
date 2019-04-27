@@ -6,7 +6,7 @@
 
 ## 自由变量
 自由变量指函数中被使用，但既不是函数参数，也不是局部变量的变量；可以理解为从函数[[scope]]属性中查找到的变量
-```
+```js
 function outter() {
     var a = 1
 
@@ -26,7 +26,7 @@ f(1)
 
 ## 静态作用域（词法作用域）
 JavaScript使用静态作用域，函数在创建时便确定了其对应的[[scope]]属性，直到函数销毁
-```
+```js
 var n = 0
 
 function f() {
@@ -51,7 +51,7 @@ function f() {
 
 ## 共用一个[[scope]]
 同一个上下文创建的闭包共用一个[[scope]]
-```
+```js
 var funs = []
 
 for (var i = 0; i < 10; i++) {
@@ -66,7 +66,7 @@ funs[0]()
 funs[1]()
 funs[9]()
 ```
-```
+```js
 function f() {
     var x = 0
 
