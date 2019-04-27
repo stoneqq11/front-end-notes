@@ -44,11 +44,11 @@ n.click() // click
 ## 派发事件 dispatchEvent(envent)
 DOM 内置定义了一些事件行为，这些行为往往通过用户的指定行为来触发，事件系统主动通知到监听器；
 
-而对于[自定义事件](https://github.com/stoneqq11/DOM-/blob/master/%E4%BA%8B%E4%BB%B6.md)，往往需要开发者在对应的时机来主动派发，告知事件系统通知到监听器；
+而对于[自定义事件](./event.md)，往往需要开发者在对应的时机来主动派发，告知事件系统通知到监听器；
 
 dispatchEvent可以完成这一行为
 
-```
+```js
 // add an appropriate event listener
 obj.addEventListener("cat", function(e) { process(e.detail) })
 

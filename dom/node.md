@@ -72,4 +72,4 @@ document.getElementsByTagName('header')[0].appendChild(clone)
 
 所有类型的节点，都会直接或间接的实现该接口
 
-> 注：Node 接口本身实现了 EventTarget 接口，从而在任意节点上调用 addEventListener/removeEventListener 方法， 见 [事件]()
+> 注：Node 接口本身实现了 EventTarget 接口，从而在任意节点上调用 addEventListener/removeEventListener 方法， 见 [事件](./event.md)

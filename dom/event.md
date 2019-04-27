@@ -43,7 +43,7 @@ tab.diapatchEvent(evt)
 
 可以看出事件的传递分为 捕获（capture）冒泡（bubble） 阶段
 
-其中，是否经过捕获阶段是在添加监听器时定义的，见 [事件监听](https://github.com/stoneqq11/DOM-/blob/master/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC.md)
+其中，是否经过捕获阶段是在添加监听器时定义的，见 [事件监听](./event_listener.md)
 
 是否经过冒泡阶段，则是通过Event的bubbles属性决定，也可以使用stopPropagation()方法组织冒泡
 
