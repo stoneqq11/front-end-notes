@@ -1,6 +1,6 @@
 # 浮动 float
 浮动布局，是指将元素移除普通布局流，在行盒子内向左或向右排列，直到遇到包含块的边，或者遇到另一个浮动的盒子
-```
+```css
 {
   float: left|right|none
 }
@@ -19,7 +19,7 @@
 
 ## 清除float
 使用clean属性可以清除浮动
-```
+```css
 {
   float: left|right|both|none
 }

@@ -1,6 +1,6 @@
 
 # 盒模型
-CSS使用盒模型来描述每一个元素，然后根据[可视化格式模型]()进行页面布局；
+CSS使用盒模型来描述每一个元素，然后根据[可视化格式模型](./visual_format_model.md)进行页面布局；
 
 一个盒模型主要包含四部分，从内到外依次是：内容区域、内间距、边框、外间距。
 
@@ -34,7 +34,7 @@ CSS使用盒模型来描述每一个元素，然后根据[可视化格式模型]
 
 ## 边框 border
 > 可以为盒子设定 边框样式(border-style)/边框宽度(border-width)/边框颜色(border-color)，border是这三者的缩写
-```
+```css
 border: solid 1px red;
 border-style: solid;
 border-width: 1px;
@@ -42,7 +42,7 @@ border-color: red;
 ```
 
 > border 同时设置了四边的样式，也可以单独设置
-```
+```css
 border-left: solid 1px red;
 border-left-style: dashed;
 border-right-width: 3px;
@@ -55,7 +55,7 @@ border-right-width: 3px;
 > 外间距的值决定了外间距区域的大小；外间距区域通常是透明的。
 
 > margin 属性是 margin-top/margin-right/margin-bottom/margin-left 的缩写，下面几种情况对应的top/right/bottom/left值实例：
-```
+```css
 margin: 1px             ===> 1px 1px 1px 1px
 margin: 1px 2px         ===> 1px 2px 1px 2px
 margin: 1px 2px 3px     ===> 1px 2px 3px 2px

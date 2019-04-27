@@ -9,7 +9,7 @@
 
 ## Specified value
 指定值根据如下规则获取：
-1. 根据[级联](https://github.com/stoneqq11/css-summary/blob/master/%E7%BA%A7%E8%81%94.md)规则处理的结果，如果不是'inherit'，则使用该值;
+1. 根据[级联](./cascade.md)规则处理的结果，如果不是'inherit'，则使用该值;
 2. 如果级联处理结果为'inherit'，则取依照[继承]()规则，取父元素的计算值
 3. 否则，使用定义属性时候设定的初始值
 
@@ -23,7 +23,7 @@
 <br/>
 
 ## Used value
-计算值在级联处理过程中就已经确定，但有些值需要依赖其他的值；例如使用了百分比宽度的值，需要根据其[包含块](https://github.com/stoneqq11/css-summary/blob/master/%E5%8C%85%E5%90%AB%E5%9D%97.md)尺寸计算。
+计算值在级联处理过程中就已经确定，但有些值需要依赖其他的值；例如使用了百分比宽度的值，需要根据其[包含块](./contain_block.md)尺寸计算。
 
 渲染值是使用该值
 

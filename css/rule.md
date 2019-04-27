@@ -11,14 +11,14 @@
 > 包含 **普通规则** 和 **@规则** 两类；
 
 普通规则是最常见的形式，包括选择器和对应的样式定义语句
-```
+```css
 p, a, #id {
     font-size: 20px;
     ...
 }
 ```
 @规则包括:@charset/@import/@media/@font-face 等
-```
+```css
 @charset 'utf-8';
 @import '../common.css';
 @media screen and (max-width: 800px) {

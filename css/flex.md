@@ -10,14 +10,14 @@
 4. 侧轴： 和主轴垂直的方向
 
 ## 内容排列方向(flex-direction)
-```
+```css
 display: flex;
 flex-direction: row|column
 ```
 当取值 row 时，以行排列，此时横向为主轴，纵向为侧轴；取值column，以列排列，纵向为主轴，横向为侧轴
 
 ## 主轴布局方式(justify-content)
-```
+```css
 display: flex;
 flex-direction: row;
 justify-content: flex-start|flex-end|center|space-between|space-arround
@@ -30,7 +30,7 @@ space-between: 等分间距排列，开始和末尾无间距，子项间等间�
 space-arround: 等分间距排列，并保留开始和末尾的间距
 
 ## 侧轴排列方式(aligin-items)
-```
+```css
 display: flex;
 display: row;
 aligin-items: flex-start|flex-end|center|space-between|space-arround
@@ -38,13 +38,13 @@ aligin-items: flex-start|flex-end|center|space-between|space-arround
 和主轴垂直方向的排列，flex-direction 为 row 时，为纵向；coloumn时为横向
 
 ## 换行(flex-wrap)
-```
+```css
 flex-wrap: wrap|nowrap|wrap-reverse
 ```
 分别设置为：换行/不换行/反向换行
 
 ## 子项内容范围(flex)
-```
+```css
 flex: 1
 ```
 主要应用场景：
