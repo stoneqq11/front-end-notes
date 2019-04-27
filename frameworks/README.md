@@ -1,8 +1,10 @@
 # framework
 前端框架学习笔记
 
-[MVVM](https://github.com/stoneqq11/framework/blob/master/MVVM.md)
+[MVVM](./mvvm.md)
 
-[Vuex](https://github.com/stoneqq11/framework/blob/master/vuex.md)
+[Vuex](./vuex.md)
 
-[react-redux](https://github.com/stoneqq11/framework/blob/master/react-redux.md)
+[react-redux](./react_redux.md)
+
+[vue-nextTick](./vue_next_tick.md)
