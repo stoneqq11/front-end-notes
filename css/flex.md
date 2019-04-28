@@ -24,9 +24,13 @@ justify-content: flex-start|flex-end|center|space-between|space-arround
 ```
 上述取值含义依次为：
 flex-start: 从排列方向开始往末尾排列（上述情况为从左到右）
+
 flex-end: 从排列方向末尾往开始排列
+
 center: 排列方向居中排列，左右间距相等，子项之间无间距
+
 space-between: 等分间距排列，开始和末尾无间距，子项间等间距
+
 space-arround: 等分间距排列，并保留开始和末尾的间距
 
 ## 侧轴排列方式(aligin-items)
