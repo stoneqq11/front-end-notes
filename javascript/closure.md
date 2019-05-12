@@ -33,7 +33,8 @@ function f() {
     console.log(n)
 }
 
-// 函数f在创建时确定了
+// 函数f在创建时确定了作用域
+// 输出 0
 (function() {
     var n = 1
     f()

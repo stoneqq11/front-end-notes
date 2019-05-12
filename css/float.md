@@ -21,6 +21,6 @@
 使用clean属性可以清除浮动
 ```css
 {
-  float: left|right|both|none
+  clean: left|right|both|none
 }
 ```
